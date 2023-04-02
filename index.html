@@ -4,10 +4,380 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Reference Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>My First Website</h1>
-    <p>This is not my very first website.</p>
-</body>
+
+<header>
+    <h1>Reference Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#naming-coventions">Naming Conventions</a></li>
+        <li><a href="#commit-messages">Commit messages</a></li>
+        <li><a href="#html-elements">HTML Elements</a></li>
+        <li><a href="#structuring-content">Structuring Content</a></li>
+        <li><a href="#linking">Linking to an element on the same page</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#landmark">Landmark Roles</a></li>
+        <li><a href="#aria">Aria-label</a></li>
+        <li><a href="#skip">Skip links</a></li>
+        <li><a href="#font-properties">Font Properties</a></li>
+        <li><a href="#text-decorations">Text Decorations</a></li>
+        <li><a href="#styling-links">Styling Links</a></li>
+        <li><a href="#google-font">Adding a Google Font</a></li>
+        <li><a href="#margins">Margin</a></li>
+        <li><a href="#padding">Padding</a></li>
+      </ul>
+    </nav>
+  </header>  
+
+  <main>
+    <section id="naming-coventions">
+      <h2>Naming Conventions</h2>
+      
+      <h3>Rules for naming files and paths</h3>
+      <ul>
+        <li>All lowercase letters</li>
+        <li>No spaces</li>
+        <li>Only letters, numbers, and dashes (-)</li>
+      </ul>
+
+      <p><b>Examples:</b> main.css | action-figure.jpg | my-first-website.html</p>
+    </section>
+    
+    <section id="commit-messages">
+      <h2>Commit messages</h2>
+
+      <h3>When commiting to GitHub make sure to...</h3>
+      <ul>
+        <li>Start with a capital letter and the rest all lowercase</li>
+        <li>Do not end with a period</li>
+        <li>Action word first then what you performed that action on for the subject</li> 
+      </ul>
+
+      <p><b>Examples:</b> Update code | Fix index.html | Add style.css</p>
+    </section>
+    
+    <section id="html-elements">
+      <h2>HTML Elements</h2>
+      
+      <h3>Headings</h3>
+      <!-- explain headings -->
+      <p>Each header establishes hierarchy of importance. the title is decreased in size as the number goes up.</p>
+      <div>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+      </div>
+      
+      <h3>Paragraph</h3>
+      <p>Each paragraph is a block-level element and starts on a new line</p>
+      <p>This is an example of a chunk of text within a p tag.</p>
+      
+      <h3>Unordered list</h3>
+      
+      <ul>
+        <li>I am a list item</li>
+        <li>In an unordered list</li>
+        <li>Where my order is not important</li>
+      </ul>
+
+      <h3>Ordered list</h3>
+      
+      <ol>
+        <li>I am a list item</li>
+        <li>In an ordered list</li>
+        <li>Where my order is important and numbered</li>
+      </ol>
+
+      <h3>Description list</h3>
+      
+      <dl>
+        <dt><strong>I am a description term</strong></dt>
+        <dd>I am the description of the term</dd>
+        <dd>You can have multiple descriptions but only 1 term!</dd>
+      </dl>
+
+      <h3>Hyperlinking</h3>
+
+      <p>Use the element <strong>a</strong> to create a hyperlink.</p>
+      <p>Use href="" and inside the quotations is the URL or location the link is pointing to.</p>
+
+      <h3>Images</h3>
+
+      <p>Use the element <strong>img src=""</strong> and followed by <strong>alt=""</strong></p>
+      <p>Inside the qutations of <strong>img src=""</strong> is the location of the image</p>
+      <p>Inside the qutations of <strong>alt=""</strong> specifies alternate text for an image if it cannot display</p>
+
+      <h3>Figure/Figcaption</h3>
+
+      <p>Use the element <strong>figure</strong></p>
+      <p>This is an element that specifies self-contained content (illustrations, diagrams, photos). This does not affect the flow of the document</p>
+      <p>Inside the element is <strong>figcaption</strong> which defines a caption for the photo used.</p>
+
+      <h3>Quotations</h3>
+
+      <p>Use the element <strong>q</strong></p>
+      <p>This element is used to mark up quotes embedded in other elements</p>
+      <p></p><strong>Example:</strong> This is normal text <q>followed by qutations</q></p>
+
+      <h3>Block Quote</h3>
+
+      <p>Use the element <strong>blockquote</strong></p>
+      <p>This element is used for a large stand alone quote</p>
+      <p></p><strong>Example:</strong> This is normal text <blockquote>followed by a block quote</blockquote></p>
+
+      <h3>Citation</h3>
+
+      <p>Use the element <strong>cite</strong></p>
+      <p>This element is used for marking the source of the quote</p>
+      <p><strong>Example:</strong> This is normal text <blockquote>followed by a block quote</blockquote> <cite>followed by its citation</cite></p>
+
+      <h3>Emphasis</h3>
+
+      <p>Use the element <strong>em</strong></p>
+      <p>This element is to show emphasis</p>
+      <p><strong>Example:</strong><em> This text is emphasized</em></p>
+
+      <h3>Lots of emphasis</h3>
+
+      <p>Use the element <strong>strong</strong></p>
+      <p>This element is to show lots ofemphasis. Strong sense of urgency</p>
+      <p><strong>Example:</strong><strong> This text is emphasized a lot</strong></p>
+
+      <h3>Keyword</h3>
+
+      <p>Use the element <strong>b</strong></p>
+      <p>This element is to show a keyword</p>
+      <p><strong>Example:</strong><b> This text is a key word now</b></p>
+
+      <h3>Italics</h3>
+
+      <p>Use the element <strong>i</strong></p>
+      <p>This element is used to show another language, technical term or title</p>
+      <p><strong>Example:</strong><i> This text is in italics</i></p>
+
+      <h3>Small</h3>
+
+      <p>Use the element <strong>small</strong></p>
+      <p>This element is used to represent side comments and small print</p>
+      <p><strong>Example:</strong><small> This text is now a side comment</small></p>
+    </section>
+
+    <section id="structuring-content">
+        <h2>Structuring Content</h2>
+
+        <h3>Header</h3>
+
+        <p>Use the element <strong>header</strong></p>
+        <p>This element is used for the introductory content usually located at the top of the page.</p>
+        <p>Things that might be in this section include a logo, main navigation to other parts of page.</p>
+
+        <h3>Footer</h3>
+
+        <p>Use the element <strong>footer</strong></p>
+        <p>This shows up at the end of the page</p>
+        <p>This usually contains a list of links, copyright information, extra info about the company or terms of services</p>
+
+        <h3>Main</h3>
+
+        <p>Use the element <strong>main</strong></p>
+        <p>This element is for the main content on the page and only used once.</p>
+        <p>This tells the browser where the main content is</p>
+
+        <h3>Section</h3>
+
+        <p>Use the element <strong>section</strong></p>
+        <p>This element is used to wrap related pieces of content together.</p>
+        <p>Each section has its own heading usually.</p>
+
+        <h3>Article</h3>
+
+        <p>Use the element <strong>article</strong></p>
+        <p>This element specifies independent, self contained content.</p>
+        <p>An article should make sense on its own from the rest of the site. These include forum posts, blog posts or news stories.</p>
+
+        <h3>Navigation</h3>
+
+        <p>Use the element <strong>nav</strong></p>
+        <p>This element represents a section of the page that navigates users with links to other parts on the page or direct users to other external documents</p>
+
+        <h3>Header</h3>
+
+        <p>Use the element <strong>header</strong></p>
+        <p>This element is used for the introductory content usually located at the top of the page.</p>
+        <p>Things that might be in this section include a logo, main navigation to other parts of page.</p>    
+    </section>
+
+    <section id="linking">
+        <h2>Linking to an element on the same page</h2>
+
+        <p>You can establish an id in your section by doing section is="example"</p>
+        <p>You can now make a link to take you to that section by doing <strong>a href="#example" Example </strong> </p>
+        <p>You can now click "example" and you will appear on the page where example is. Why not try it out? At the top of this page click "Linking to an element on the same page" and it should take you right here!</p>
+    </section>
+
+    <section id="comments">
+        <h2>Comments</h2>
+
+        <p>Comments are not displayed on the page but rather to help you make comments on sections of code</p>
+        <p>"!-- This is how you create a comment --" Just create the brackets at the end</p>
+    </section>
+
+    <section id="landmark">
+        <h2>Landmark Roles</h2>
+
+        <p>This is to help screen readers jump directly to specific sections on the page</p>
+
+        <h3>Header</h3>
+
+        <p><strong>header role="banner"</strong> This defines the masthead, added to header</p>
+
+        <h3>Nav</h3>
+
+        <p><strong>nav role="navigation"</strong> This defines the primary navigation, added to the top nav</p>
+
+        <h3>Main</h3>
+
+        <p><strong>main role="main"</strong> This defines the main content of the page, added to main</p>
+
+        <h3>Aside</h3>
+
+        <p><strong>aside role="complimentary"</strong> This defines an element related to the primary content, added to aside</p>
+
+        <h3>Footer</h3>
+
+        <p><strong>footer role="contentinfo"</strong> This defines an element as info about the content (copyright, terms etc), added to footer</p>
+    </section>
+
+    <section id="aria">
+        <h2>Aria-label</h2>
+
+        <p><strong>aria-label=""</strong> is used to provide the user with a non visual label that is announced by screen readers</p> 
+    </section>
+
+    <section id="skip">
+        <h2>Skip links</h2>
+
+        <p>Skip links are specifically at the top of the page and when clicked can jump the user to different specified spots on the page</p> 
+    </section>
+
+    <section id="font-properties">
+        <h2>Font Properties</h2>
+
+        <h3>Font Family</h3>
+
+        <p>This specifies the font for an element</p>
+        <p><strong>Example: </strong>"Times New Roman", Times, serif;</p>
+
+        <h3>Font Size</h3>
+
+        <p>This adjusts the size of the font. Use a number attached to a unit of measurement (rem [best choice], em, px)</p>
+        <p><strong>Example: </strong>4rem, 1375em, 13px</p>
+
+        <h3>Font Weight</h3>
+
+        <p>This sets how thick or thin the font will be when displayed</p>
+        <p><strong>Example: </strong>bold, normal, 900</p>
+
+        <h3>Font Style</h3>
+
+        <p>This sets the style for the text</p>
+        <p><strong>Example: </strong>italic, normal</p>
+
+        <h3>Line height</h3>
+
+        <p>This adjusts the line height. A single number is used that multiplies the font size by that number</p>
+        <p><strong>Example: </strong>2.5</p>
+
+        <h3>Font Shorthand</h3>
+
+        <p>This adjusts all the different properties in a font at once</p>
+        <p><strong>Example: </strong>font: italic 1.4em "Fira Sans", serif;</p>
+    </section>
+
+    <section id="text-decorations">
+        <h2>Text Decorations</h2>
+
+        <h3>Text Transform</h3>
+
+        <p>Change capitalization either all uppercase or all lowercase. This is better to adjust in css for accessibility reasons</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+            <li>Uppercase</li>
+            <li>Lowercase</li>
+            <li>Capitalize</li>
+        </ul>
+
+        <h3>Text Decoration</h3>
+
+        <p>This is the decoration for the text displayed</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+            <li>none</li>
+            <li>underline</li>
+            <li>line-through</li>
+            <li>overline</li>
+        </ul>
+
+        <h3>Text Align</h3>
+
+        <p>This specifies the horizontal alignment of text</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+            <li>left</li>
+            <li>center</li>
+            <li>right</li>
+            <li>justify</li>
+        </ul>
+
+        <h3>Text Indent</h3>
+
+        <p>Indents the first line of text</p>
+        <p><strong>Example: </strong>1rem</p>
+
+        <h3>Text Shadow</h3>
+
+        <p>This adds a shadow to the text.</p>
+        <p><strong>Example: </strong>text-shadow: 2px 2px #ff0000</p>
+    </section>
+
+    <section id="styling-links">
+        <h2>Styling Links</h2>
+
+        <p>Links can be styled with any CSS property (colour, font-family, background etc.)</p>
+        <p>They can also be styled depending on actions the user performs such as...</p>
+        <p><a class="link-to-style" href="google.com" target="_blank">This link is blue as default, changes to orange after being clicked, changes to pink as you're hovering over it, and red when tabbed to it</a></p>
+    </section>
+
+    <section id="google-font">
+        <h2>Adding a Google Font</h2>
+
+        <ol>
+        <li>First head over to the google fonts website right here <a href="https://fonts.google.com/"> fonts.google.com</a></li>
+        <li>Choose your font and then click "+ Select this style"</li>
+        <li>Go to the type right to see selected family and go to "use on the web"</li>
+        <li>Paste the link inside the head of your doccument</li>
+        <li>To use them you can check the "CSS rules to specify families" on google fonts to get an idea on how to type it out in your css style sheet</li>
+        </ol>    
+    </section>
+
+    <section id="margins">
+        <h2>Margin</h2>
+
+        <p>Im being pushed!</p>
+        <p>The margin is an invisible space around your box pushing other boxes away from your box like this!</p>
+        <p>Im being pushed!</p>    
+    </section>
+
+    <section id="padding">
+        <h2>Padding</h2>
+
+        <p>Padding adds spacing inside the box pushing the content away from the border</p>
+    </section>
+  </main>
+
 </html>
